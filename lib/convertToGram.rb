@@ -1,10 +1,10 @@
-module Converter
-    module СonvertToGram
+
+    module ConvertToGram
 
         def self.FromKilo()
             puts 'Kilo'
         end    
 
     end   
-end     
+   
 
