@@ -9,14 +9,36 @@ module Converter
   extend self
 
   def gram2kilo(m,p = 1)
-    Gram.FromKilo(m)
+    Gram.to_Kilo(m, p)
   end 
   
- # def self.Read_Density()
-  #  file_name = File.join(File.dirname(File.expand_path(__FILE__)), 'ProductDensity.txt')
-   # config = IO.read(file_name)
-    #puts config
-  #end 
+  def gram2ml(m, p = 1)
+    Gram.to_ml(m,p)
+  end  
 
+  def gram2liter(m, p =1)
+    Gram.to_liter(m,p)
+  end  
+
+  
+  def gram2diciliter(m, p =1)
+    Gram.to_diciliter(m,p)
+  end  
+
+
+  def gram2tabelspoon(m, p =1)
+    Gram.to_tablespoon(m,p)
+  end  
+
+  
+  def gram2glass(m, p =1)
+    Gram.to_glass(m,p)
+  end  
+
+
+  def gram2teaspoon(m, p =1)
+    Gram.to_teaspoon(m,p)
+  end  
+  
 end
 
