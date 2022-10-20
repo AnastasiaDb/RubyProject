@@ -1,17 +1,14 @@
 class TableSpoon
-    attr_accessor p = 1
-    def initialize(p)
-        @p = p
-    end
-    def self.to_kilo(n)
+    
+    def self.to_kilo(n, p = 1)
         n * 18 * p / 1000  
     end
 
-    def self.to_ml(n)
+    def self.to_ml(n, p = 1)
         n * 18  
     end
 
-    def self.to_gram(n)
+    def self.to_gram(n, p = 1)
         n * 18 * p 
     end
 
@@ -27,7 +24,7 @@ class TableSpoon
         n * 18  / 200
     end
 
-    def self.tea_spoon(n, p = 1)
+    def self.to_teaspoon(n, p = 1)
         n * 18  / 200
     end
 end
