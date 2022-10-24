@@ -37,8 +37,8 @@ module Converter
     TableSpoon.to_teaspoon(n, p)
   end
 
-  def gram2kilo(m,p = 1)
-    Gram.to_Kilo(m, p).round(2)
+  def gram2kilo(m)
+    Gram.to_Kilo(m).round(2)
 
   end 
   

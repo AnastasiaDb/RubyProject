@@ -1,6 +1,6 @@
 class Gram
 
-    def self.to_Kilo(gr,p)
+    def self.to_Kilo(gr)
         if(gr<0)
             gr /1000.0 * -1 
         else        
