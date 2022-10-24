@@ -9,7 +9,7 @@ module Converter
   # Your code goes here...
   extend self 
 
-  def tablesp2kilo(n,p=1)
+  def tablesp2kilo(n, p = 1)
     TableSpoon.to_kilo(n, p)
   end
 
@@ -39,7 +39,6 @@ module Converter
 
   def gram2kilo(m)
     Gram.to_Kilo(m).round(2)
-
   end 
   
   def gram2ml(m, p = 1)

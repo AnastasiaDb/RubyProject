@@ -1,6 +1,6 @@
 class TableSpoon
     
-    def self.to_kilo(n)
+    def self.to_kilo(n, p = 1)
         n * 18 * p / 1000  
     end
 
