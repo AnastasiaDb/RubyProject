@@ -6,7 +6,7 @@ require_relative "gram"
 
 module Converter
   class Error < StandardError; end
-  # Your code goes here...
+
   extend self 
 
   def tablesp2kilo(n, p = 1)
