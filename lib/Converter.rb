@@ -4,6 +4,8 @@ require_relative "Converter/version"
 require_relative "tableSpoon"
 require_relative "gram"
 require_relative "teaSpoon"
+require_relative "glass"
+require_relative "deciliter"
 
 module Converter
   class Error < StandardError; end
@@ -97,61 +99,70 @@ module Converter
   end
 
   #   7 функций по Стаканом (glass)
-  def cupTOgram(n_cup, po = 1)
-    Glass.to_teaspoon(n_cup, po = 1).round(2)
+  def glassTOteaspoon(n_cup, po = 1)
+    Glass.to_teaspoon(n_cup, po).round(2)
   end
 
-  def cupTOkilo(n_cup, po = 1)
-    Glass.to_kilo(n_cup, po = 1).round(2)
+  def glassTOkilo(n_cup, po = 1)
+    Glass.to_kilo(n_cup, po).round(2)
   end
 
-  def cupTOml(n_cup, po = 1)
-    Glass.to_ml(n_cup, po = 1).round(2)
+  def glassTOml(n_cup, po = 1)
+    Glass.to_ml(n_cup, po).round(2)
   end
 
-  def cupTOgram(n_cup, po = 1)
-    Glass.to_gram(n_cup, po = 1).round(2)
+  def glassTOgram(n_cup, po = 1)
+    Glass.to_gram(n_cup, po).round(2)
   end
 
-  def cupTOliter(n_cup, po = 1)
-    Glass.to_liter(n_cup, po = 1).round(2)
+  def glassTOliter(n_cup, po = 1)
+    Glass.to_liter(n_cup, po).round(2)
   end
 
-  def cupTOdeciliter(n_cup, po = 1)
-    Glass.to_deciliter(n_cup, po = 1).round(2)
+  def glassTOdeciliter(n_cup, po = 1)
+    Glass.to_deciliter(n_cup, po).round(2)
   end
 
-  def cupTOtablespoon(n_cup, po = 1)
-    Glass.to_tablespoon(n_cup, po = 1).round(2)
+  def glassTOtablespoon(n_cup, po = 1)
+    Glass.to_tablespoon(n_cup, po).round(2)
   end
+
+  # p glassTOdeciliter(76)
+  # p glassTOdeciliter(324)
+  # p glassTOdeciliter(1000,1.4)
+  # p glassTOdeciliter(432, 3)
+  # p glassTOdeciliter(32, 4)
+  # p glassTOdeciliter(-5, 1.5)
+  # p glassTOdeciliter(0, 5)
+  # p glassTOdeciliter(0)
 
   #   7 функций по Стаканом (deciliter)
-  def deciliterTOgram(deciliter, po = 1)
+  def deciliterTOteaspoon(deciliter, po = 1)
     Deciliter.to_teaspoon(deciliter, po = 1).round(2)
   end
 
   def deciliterTOkilo(deciliter, po = 1)
-    Deciliter.to_kilo(deciliter, po = 1).round(2)
+    Deciliter.to_kilo(deciliter, po).round(2)
   end
 
   def deciliterTOml(deciliter, po = 1)
-    Deciliter.to_ml(deciliter, po = 1).round(2)
+    Deciliter.to_ml(deciliter, po).round(2)
   end
 
   def deciliterTOgram(deciliter, po = 1)
-    Deciliter.to_gram(deciliter, po = 1).round(2)
+    Deciliter.to_gram(deciliter, po).round(2)
   end
 
   def deciliterTOliter(deciliter, po = 1)
-    Deciliter.to_liter(deciliter, po = 1).round(2)
+    Deciliter.to_liter(deciliter, po).round(2)
   end
 
   def deciliterTOglass(deciliter, po = 1)
-    Deciliter.to_glass(deciliter, po = 1).round(2)
+    Deciliter.to_glass(deciliter, po).round(2)
   end
 
   def deciliterTOtablespoon(deciliter, po = 1)
-    Deciliter.to_tablespoon(deciliter, po = 1).round(2)
+    Deciliter.to_tablespoon(deciliter, po).round(2)
   end
 end
 
