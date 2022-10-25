@@ -96,7 +96,7 @@ module Converter
     TeaSpoon.to_tablespoon(n, p).round(2)
   end
 
-  #   7 функций по Стаканом (cup)
+  #   7 функций по Стаканом (glass)
   def cupTOgram(n_cup, po = 1)
     Glass.to_teaspoon(n_cup, po = 1).round(2)
   end
@@ -123,6 +123,35 @@ module Converter
 
   def cupTOtablespoon(n_cup, po = 1)
     Glass.to_tablespoon(n_cup, po = 1).round(2)
+  end
+
+  #   7 функций по Стаканом (deciliter)
+  def deciliterTOgram(deciliter, po = 1)
+    Deciliter.to_teaspoon(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOkilo(deciliter, po = 1)
+    Deciliter.to_kilo(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOml(deciliter, po = 1)
+    Deciliter.to_ml(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOgram(deciliter, po = 1)
+    Deciliter.to_gram(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOliter(deciliter, po = 1)
+    Deciliter.to_liter(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOglass(deciliter, po = 1)
+    Deciliter.to_glass(deciliter, po = 1).round(2)
+  end
+
+  def deciliterTOtablespoon(deciliter, po = 1)
+    Deciliter.to_tablespoon(deciliter, po = 1).round(2)
   end
 end
 
