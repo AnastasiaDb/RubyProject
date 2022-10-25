@@ -7,7 +7,7 @@ require_relative "teaSpoon"
 
 module Converter
   class Error < StandardError; end
-  # Your code goes here...
+
   extend self 
 
   def tablesp2kilo(n, p = 1)
@@ -38,33 +38,33 @@ module Converter
     TableSpoon.to_teaspoon(n).round(2)
   end
 
-  def gram2kilo(m,p = 1)
-    Gram.to_Kilo(m, p)
+  def gram2kilo(m)
+    Gram.to_Kilo(m).round(2)
   end 
   
   def gram2ml(m, p = 1)
-    Gram.to_ml(m,p)
+    Gram.to_ml(m,p).round(2)
   end  
 
   def gram2liter(m, p =1)
-    Gram.to_liter(m,p)
+    Gram.to_liter(m,p).round(2)
   end  
 
   
   def gram2diciliter(m, p =1)
-    Gram.to_diciliter(m,p)
+    Gram.to_diciliter(m,p).round(2)
   end  
 
   def gram2tabelspoon(m, p =1)
-    Gram.to_tablespoon(m,p)
+    Gram.to_tablespoon(m,p).round(2)
   end  
 
   def gram2glass(m, p =1)
-    Gram.to_glass(m,p)
+    Gram.to_glass(m,p).round(2)
   end  
 
   def gram2teaspoon(m, p =1)
-    Gram.to_teaspoon(m,p)
+    Gram.to_teaspoon(m,p).round(2)
   end  
 
 
