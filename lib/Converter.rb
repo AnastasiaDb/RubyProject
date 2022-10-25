@@ -98,31 +98,31 @@ module Converter
 
   #   7 функций по Стаканом (cup)
   def cupTOgram(n_cup, po = 1)
-    Cup.to_teaspoon(n_cup, po = 1).round(2)
+    Glass.to_teaspoon(n_cup, po = 1).round(2)
   end
 
   def cupTOkilo(n_cup, po = 1)
-    Cup.to_kilo(n_cup, po = 1).round(2)
+    Glass.to_kilo(n_cup, po = 1).round(2)
   end
 
   def cupTOml(n_cup, po = 1)
-    Cup.to_ml(n_cup, po = 1).round(2)
+    Glass.to_ml(n_cup, po = 1).round(2)
   end
 
   def cupTOgram(n_cup, po = 1)
-    Cup.to_gram(n_cup, po = 1).round(2)
+    Glass.to_gram(n_cup, po = 1).round(2)
   end
 
   def cupTOliter(n_cup, po = 1)
-    Cup.to_liter(n_cup, po = 1).round(2)
+    Glass.to_liter(n_cup, po = 1).round(2)
   end
 
   def cupTOdeciliter(n_cup, po = 1)
-    Cup.to_deciliter(n_cup, po = 1).round(2)
+    Glass.to_deciliter(n_cup, po = 1).round(2)
   end
 
   def cupTOtablespoon(n_cup, po = 1)
-    Cup.to_tablespoon(n_cup, po = 1).round(2)
+    Glass.to_tablespoon(n_cup, po = 1).round(2)
   end
 end
 
