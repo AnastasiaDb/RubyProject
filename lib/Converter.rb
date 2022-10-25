@@ -4,6 +4,7 @@ require_relative "Converter/version"
 require_relative "tableSpoon"
 require_relative "gram"
 require_relative "teaSpoon"
+require_relative "kilo"
 
 module Converter
   class Error < StandardError; end
@@ -67,7 +68,6 @@ module Converter
     Gram.to_teaspoon(m,p).round(2)
   end  
 
-
   def teasp2kilo(n, p = 1)
     TeaSpoon.to_kilo(n, p)
   end
@@ -79,6 +79,50 @@ module Converter
   def teasp2gram(n, p = 1)
     TeaSpoon.to_gram(n, p)
   end
+
+  def teasp2liter(n, p = 1)
+    TeaSpoon.to_liter(n, p)
+  end
+
+  def teasp2deciliter(n, p = 1)
+    TeaSpoon.to_deciliter(n, p)
+  end
+
+  def teasp2glass(n, p = 1)
+    TeaSpoon.to_glass(n, p)
+  end
+  
+  def teasp2tablespoon(n, p = 1)
+    TeaSpoon.to_tablespoon(n, p).round(2)
+  end
+
+  def kilo2gram(m, p = 1)
+    Kilo.to_gram(m).round(2)   
+  end
+
+  def kilo2ml(m, p = 1)
+    Kilo.to_ml(m,p).round(2)
+  end
+
+  def kilo2liter(m, p =1)
+    Kilo.to_liter(m,p).round(2)
+  end
+
+  def kilo2diciliter(m,p=1)
+    Kilo.to_diciliter(m,p).round(2)
+  end
+
+  def kilo2tabelspoon(m,p=1)
+    Kilo.to_tablespoon(m,p).round(2)
+  end
+
+  def kilo2glass(m,p=1)
+    Kilo.to_glass(m,p).round(2)
+  end
+
+  def kilo2teaspoon(m,p=1)
+    Kilo.to_teaspoon(m,p).round(2)
+  end 
 
   def teasp2liter(n)
     TeaSpoon.to_liter(n)
