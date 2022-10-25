@@ -127,14 +127,6 @@ module Converter
     Glass.to_tablespoon(n_cup, po).round(2)
   end
 
-  # p glassTOdeciliter(76)
-  # p glassTOdeciliter(324)
-  # p glassTOdeciliter(1000,1.4)
-  # p glassTOdeciliter(432, 3)
-  # p glassTOdeciliter(32, 4)
-  # p glassTOdeciliter(-5, 1.5)
-  # p glassTOdeciliter(0, 5)
-  # p glassTOdeciliter(0)
 
   #   7 функций по Стаканом (deciliter)
   def deciliterTOteaspoon(deciliter, po = 1)
@@ -164,5 +156,6 @@ module Converter
   def deciliterTOtablespoon(deciliter, po = 1)
     Deciliter.to_tablespoon(deciliter, po).round(2)
   end
+
 end
 
