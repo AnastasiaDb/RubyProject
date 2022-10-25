@@ -1,8 +1,7 @@
 # Converter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/Converter`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Спасибо, что скачали наш гем!
+Это настоящая находка для тех, кто любит кулинарию. Здесь вы найдете конверторы из разных в велечин в другие, а конкретно граммы, килограммы, литры, децилитры, миллилитры, стаканы, чайные и столовые ложки. В некоторых функциях используется плотность, которая измеряется в г/мл или кг/л. Плотности некоторых продуктов Вы можете посмотреть, вызвав функцию lala.
 
 ## Installation
 
@@ -21,8 +20,38 @@ Or install it yourself as:
     $ gem install Converter
 
 ## Usage
+Для переводов используется плотность в г/мл или кг/л, по умолчанию она 1.
 
-TODO: Write usage instructions here
+Перевод из граммов:
+    gram2kilo(m) - перевод из граммов в килограммы, где m - масса в граммах
+
+    gram2ml(m, p=1) - перевод из граммов в миллилитры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    gram2liter(m, p = 1) - перевод из граммов в литры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    gram2diciliter(m, p = 1) - перевод из граммов в децилитры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    gram2tabelspoon(m, p = 1) - перевод из граммов в столовые ложки, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    gram2glass(m, p = 1) - перевод из граммов в стаканы, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    gram2teaspoon(m, p = 1) - перевод из граммов в чайные ложки, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+Переводы из килограммов:
+    kilo2gram(m) - перевод из килограммов в граммы, где m - масса в граммах
+
+    kilo2ml(m, p=1) - перевод из килограммов в миллилитры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    kilo2liter(m, p = 1) - перевод из килограммов в литры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    kilo2diciliter(m, p = 1) - перевод из килограммов в децилитры, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    kilo2tabelspoon(m, p = 1) - перевод из килограммов в столовые ложки, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    kilo2glass(m, p = 1) - перевод из килограммов в стаканы, где m - масса в граммах, p - плотность в г/мл или кг/л
+
+    kilo2teaspoon(m, p = 1) - перевод из килограммов в чайные ложки, где m - масса в граммах, p - плотность в г/мл или кг/л
+
 
 ## Development
 
@@ -38,6 +67,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
-
-Everyone interacting in the Converter project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/Converter/blob/master/CODE_OF_CONDUCT.md).
