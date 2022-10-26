@@ -18,9 +18,9 @@ class Milliliter
 
   def self.to_liter(ml)
     if (ml < 0)
-      ml / -1000
+      ml / -1000.0
     else
-      ml / 1000
+      ml / 1000.0
     end
   end
 
@@ -42,17 +42,17 @@ class Milliliter
 
   def self.to_teaspoon(ml)
     if (ml < 0)
-      ml / -5
+      ml / -5.0
     else
-      ml / 5
+      ml / 5.0
     end
   end
 
   def self.to_tablespoon(ml)
     if (ml < 0)
-      ml / -18
+      ml / -18.0
     else
-      ml / 18
+      ml / 18.0
     end
   end
 end
