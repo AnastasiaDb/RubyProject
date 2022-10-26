@@ -7,6 +7,7 @@ require_relative "teaSpoon"
 require_relative "kilo"
 require_relative "glass"
 require_relative "deciliter"
+require_relative "liter"
 
 module Converter
   class Error < StandardError; end
@@ -156,7 +157,7 @@ module Converter
   end
 
   def liter2kilo(l, p = 1)
-    Liter.to_kilo(l, p)
+    Liter.to_kilo(l, p).round(2)
   end
 
   def liter2ml(l)
