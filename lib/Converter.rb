@@ -7,7 +7,7 @@ require_relative "teaSpoon"
 require_relative "kilo"
 require_relative "glass"
 require_relative "deciliter"
-require_relative "milliliter"
+require_relative "liter"
 
 module Converter
   class Error < StandardError; end
@@ -156,32 +156,32 @@ module Converter
     Deciliter.to_tablespoon(deciliter, po).round(2)
   end
 
-  def ml2kilo(ml, p = 1)
-    Milliliter.to_kilo(ml, p).round(2)
+  def liter2kilo(l, p = 1)
+    Liter.to_kilo(l, p).round(2)
   end
 
-  def ml2gram(ml, p = 1)
-    Milliliter.to_gram(ml, p)
+  def liter2ml(l)
+    Liter.to_ml(l)
   end
 
-  def ml2liter(ml)
-    Milliliter.to_liter(ml).round(2)
+  def liter2gram(l, p = 1)
+    Liter.to_gram(l, p)
   end
 
-  def ml2deciliter(ml)
-    Milliliter.to_deciliter(ml).round(2)
+  def liter2deciliter(l)
+    Liter.to_deciliter(l)
   end
 
-  def ml2glass(ml)
-    Milliliter.to_glass(ml).round(2)
+  def liter2glass(l)
+    Liter.to_glass(l).round(2)
   end
 
-  def ml2teaspoon(ml)
-    Milliliter.to_teaspoon(ml).round(2)
+  def liter2teaspoon(l)
+    Liter.to_teaspoon(l).round(2)
   end
 
-  def ml2tablespoon(ml)
-    Milliliter.to_tablespoon(ml).round(2)
+  def liter2tablespoon(l)
+    Liter.to_tablespoon(l).round(2)
   end
 
   def info_density
