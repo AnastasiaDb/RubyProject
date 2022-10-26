@@ -14,27 +14,27 @@ module Converter
   extend self 
 
   def tablesp2kilo(n, p = 1)
-    TableSpoon.to_kilo(n, p)
+    TableSpoon.to_kilo(n, p).round(2)
   end
 
   def tablesp2ml(n)
-    TableSpoon.to_ml(n)
+    TableSpoon.to_ml(n).round(2)
   end
 
   def tablesp2gramm(n, p = 1)
-    TableSpoon.to_gram(n, p)
+    TableSpoon.to_gram(n, p).round(2)
   end
 
   def tablesp2liter(n)
-    TableSpoon.to_liter(n)
+    TableSpoon.to_liter(n).round(2)
   end
 
   def tablesp2deciliter(n)
-    TableSpoon.to_deciliter(n)
+    TableSpoon.to_deciliter(n).round(2)
   end
   
   def tablesp2glass(n)
-    TableSpoon.to_glass(n)
+    TableSpoon.to_glass(n).round(2)
   end
 
   def tablesp2teaspoon(n)
@@ -72,27 +72,27 @@ module Converter
 
 
   def teasp2kilo(n, p = 1)
-    TeaSpoon.to_kilo(n, p)
+    TeaSpoon.to_kilo(n, p).round(2)
   end
 
   def teasp2ml(n)
-    TeaSpoon.to_ml(n)
+    TeaSpoon.to_ml(n).round(2)
   end
   
   def teasp2gram(n, p = 1)
-    TeaSpoon.to_gram(n, p)
+    TeaSpoon.to_gram(n, p).round(2)
   end
 
   def teasp2liter(n)
-    TeaSpoon.to_liter(n)
+    TeaSpoon.to_liter(n).round(2)
   end
 
   def teasp2deciliter(n)
-    TeaSpoon.to_deciliter(n)
+    TeaSpoon.to_deciliter(n).round(2)
   end
 
   def teasp2glass(n)
-    TeaSpoon.to_glass(n)
+    TeaSpoon.to_glass(n).round(2)
   end
   
   def teasp2tablespoon(n)
