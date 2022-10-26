@@ -16,10 +16,10 @@ class TableSpoonTest < Minitest::Test
     end
 
     def test_tablesp_to_gramm
-        assert_equal 180, ::Converter.tablesp2gramm(10)
-        assert_equal 27, ::Converter.tablesp2gramm(-3, 0.5)
-        assert_equal 558, ::Converter.tablesp2gramm(-31)
-        assert_equal 86.4, ::Converter.tablesp2gramm(7.5, 0.64)
+        assert_equal 180, ::Converter.tablesp2gram(10)
+        assert_equal 27, ::Converter.tablesp2gram(-3, 0.5)
+        assert_equal 558, ::Converter.tablesp2gram(-31)
+        assert_equal 86.4, ::Converter.tablesp2gram(7.5, 0.64)
     end
 
     def test_tablesp_to_liter

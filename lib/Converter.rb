@@ -22,7 +22,7 @@ module Converter
     TableSpoon.to_ml(n).round(2)
   end
 
-  def tablesp2gramm(n, p = 1)
+  def tablesp2gram(n, p = 1)
     TableSpoon.to_gram(n, p).round(2)
   end
 
