@@ -50,9 +50,9 @@ class TeaSpoon
 
     def self.to_tablespoon(n, p = 1)
         if (n < 0)
-            n * 5  / -18
+            n * 5  / -18.0
         else
-            n * 5  / 18
+            n * 5  / 18.0
         end
     end
 end
