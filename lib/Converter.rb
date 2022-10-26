@@ -11,7 +11,7 @@ require_relative "deciliter"
 module Converter
   class Error < StandardError; end
 
-  extend self 
+  extend self
 
   def tablesp2kilo(n, p = 1)
     TableSpoon.to_kilo(n, p)
@@ -32,7 +32,7 @@ module Converter
   def tablesp2deciliter(n)
     TableSpoon.to_deciliter(n)
   end
-  
+
   def tablesp2glass(n)
     TableSpoon.to_glass(n)
   end
@@ -43,33 +43,31 @@ module Converter
 
   def gram2kilo(m)
     Gram.to_Kilo(m).round(2)
-  end 
-  
+  end
+
   def gram2ml(m, p = 1)
-    Gram.to_ml(m,p).round(2)
-  end  
+    Gram.to_ml(m, p).round(2)
+  end
 
-  def gram2liter(m, p =1)
-    Gram.to_liter(m,p).round(2)
-  end  
+  def gram2liter(m, p = 1)
+    Gram.to_liter(m, p).round(2)
+  end
 
-  
-  def gram2diciliter(m, p =1)
-    Gram.to_diciliter(m,p).round(2)
-  end  
+  def gram2diciliter(m, p = 1)
+    Gram.to_diciliter(m, p).round(2)
+  end
 
-  def gram2tabelspoon(m, p =1)
-    Gram.to_tablespoon(m,p).round(2)
-  end  
+  def gram2tabelspoon(m, p = 1)
+    Gram.to_tablespoon(m, p).round(2)
+  end
 
-  def gram2glass(m, p =1)
-    Gram.to_glass(m,p).round(2)
-  end  
+  def gram2glass(m, p = 1)
+    Gram.to_glass(m, p).round(2)
+  end
 
-  def gram2teaspoon(m, p =1)
-    Gram.to_teaspoon(m,p).round(2)
-  end  
-
+  def gram2teaspoon(m, p = 1)
+    Gram.to_teaspoon(m, p).round(2)
+  end
 
   def teasp2kilo(n, p = 1)
     TeaSpoon.to_kilo(n, p)
@@ -78,7 +76,7 @@ module Converter
   def teasp2ml(n)
     TeaSpoon.to_ml(n)
   end
-  
+
   def teasp2gram(n, p = 1)
     TeaSpoon.to_gram(n, p)
   end
@@ -94,7 +92,7 @@ module Converter
   def teasp2glass(n)
     TeaSpoon.to_glass(n)
   end
-  
+
   def teasp2tablespoon(n)
     TeaSpoon.to_tablespoon(n, p).round(2)
   end
@@ -157,26 +155,54 @@ module Converter
     Deciliter.to_tablespoon(deciliter, po).round(2)
   end
 
+  def liter2kilo(l, p = 1)
+    Liter.to_kilo(l, p)
+  end
+
+  def liter2ml(l)
+    Liter.to_ml(l)
+  end
+
+  def liter2gram(l, p = 1)
+    Liter.to_gram(l, p)
+  end
+
+  def liter2deciliter(l)
+    Liter.to_deciliter(l)
+  end
+
+  def liter2glass(l)
+    Liter.to_glass(l).round(2)
+  end
+
+  def liter2teaspoon(l)
+    Liter.to_teaspoon(l).round(2)
+  end
+
+  def liter2tablespoon(l)
+    Liter.to_tablespoon(l).round(2)
+  end
+
   def info_density
-    products = {'Продукты' => 'г/мл',
-  'Мука Пшеничная' => 0.64,
-  'Мука Картофельная' => 0.8,
-  'Сухари Молотые' => 0.5,
-  'Манка' => 0.8,
-  'Гречка' => 0.8,
-  'Рис' => 0.91,
-  'Перловая' => 0.91,
-  'Пшено' => 0.88,
-  'Крупа овсяная' => 0.68,
-  'Крупа кукурузная' => 0.72,
-  'Горох лущеный' => 0.91,
-  'Горох нелущеный' => 0.8,
-  'Чечевица' => 0.84,
-  'Фасоль' => 0.88,
-  'Сахарный песок' => 0.8,
-  'Соль' => 1.3
-}
-  products.each_pair {|key, value| puts "#{key}   #{value}"}
-  ''
-end
+    products = { 'Продукты' => 'г/мл',
+                 'Мука Пшеничная' => 0.64,
+                 'Мука Картофельная' => 0.8,
+                 'Сухари Молотые' => 0.5,
+                 'Манка' => 0.8,
+                 'Гречка' => 0.8,
+                 'Рис' => 0.91,
+                 'Перловая' => 0.91,
+                 'Пшено' => 0.88,
+                 'Крупа овсяная' => 0.68,
+                 'Крупа кукурузная' => 0.72,
+                 'Горох лущеный' => 0.91,
+                 'Горох нелущеный' => 0.8,
+                 'Чечевица' => 0.84,
+                 'Фасоль' => 0.88,
+                 'Сахарный песок' => 0.8,
+                 'Соль' => 1.3
+    }
+    products.each_pair { |key, value| puts "#{key}   #{value}" }
+    ''
+  end
 end

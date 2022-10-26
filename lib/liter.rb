@@ -34,25 +34,25 @@ class Liter
 
   def self.to_glass(l)
     if (l < 0)
-      l * 1000 / -200
+      l * 1000 / -200.0
     else
-      l * 1000 / 200
+      l * 1000 / 200.0
     end
   end
 
   def self.to_teaspoon(l)
     if (l < 0)
-      l * 1000 / -5
+      l * 1000 / -5.0
     else
-      l * 1000 / 5
+      l * 1000 / 5.0
     end
   end
 
   def self.to_tablespoon(l)
     if (l < 0)
-      l * 1000 / -18
+      l * 1000 / -18.0
     else
-      l * 1000 / 18
+      l * 1000 / 18.0
     end
   end
 
