@@ -71,6 +71,34 @@ module Converter
     Gram.to_teaspoon(m, p).round(2)
   end
 
+  def kilo2gram(m, p = 1)
+    Kilo.to_gram(m).round(2)   
+  end
+
+  def kilo2ml(m, p = 1)
+    Kilo.to_ml(m,p).round(2)
+  end
+
+  def kilo2liter(m, p =1)
+    Kilo.to_liter(m,p).round(2)
+  end
+
+  def kilo2diciliter(m,p=1)
+    Kilo.to_diciliter(m,p).round(2)
+  end
+
+  def kilo2tabelspoon(m,p=1)
+    Kilo.to_tablespoon(m,p).round(2)
+  end
+
+  def kilo2glass(m,p=1)
+    Kilo.to_glass(m,p).round(2)
+  end
+
+  def kilo2teaspoon(m,p=1)
+    Kilo.to_teaspoon(m,p).round(2)
+  end 
+
   def teasp2kilo(n, p = 1)
     TeaSpoon.to_kilo(n, p).round(2)
   end
